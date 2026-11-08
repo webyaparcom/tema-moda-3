@@ -1,0 +1,384 @@
+{
+  "name": "Kurumsal",
+  "path": "kurumsal",
+  "desc": [],
+  "data": [
+    {
+      "id": "misyon",
+      "name": {
+        "tr": "Misyon",
+        "en": "Mission",
+        "ar": "المهمة"
+      },
+      "description": {
+        "tr": "Misyonumuz",
+        "en": "Our mission",
+        "ar": "مهمتنا"
+      },
+      "path": "misyon",
+      "icon": "flag",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [],
+        "footer": []
+      },
+      "index": 0
+    },
+    {
+      "id": "vizyon",
+      "name": {
+        "tr": "Vizyon",
+        "en": "Vision",
+        "ar": "الرؤية"
+      },
+      "description": {
+        "tr": "Vizyonumuz",
+        "en": "Our vision",
+        "ar": "رؤيتنا"
+      },
+      "path": "vizyon",
+      "icon": "visibility",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [],
+        "footer": []
+      },
+      "index": 1
+    },
+    {
+      "id": "kalitepolitikamiz",
+      "name": {
+        "tr": "Kalite Politikamız",
+        "en": "Quality Policy",
+        "ar": "سياسة الجودة"
+      },
+      "description": {
+        "tr": "Kalite politikamız",
+        "en": "Our quality policy",
+        "ar": "سياسة الجودة لدينا"
+      },
+      "path": "kalitepolitikamiz",
+      "icon": "verified",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [],
+        "footer": []
+      },
+      "index": 2
+    },
+    {
+      "id": "gizlilikpolitikasi",
+      "name": {
+        "tr": "Gizlilik Politikası",
+        "en": "Privacy Policy",
+        "ar": "سياسة الخصوصية"
+      },
+      "description": {
+        "tr": "Gizlilik politikası",
+        "en": "Privacy policy",
+        "ar": "سياسة الخصوصية"
+      },
+      "path": "gizlilik-politikasi",
+      "icon": "privacy_tip",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [],
+        "footer": []
+      },
+      "index": 3
+    },
+    {
+      "id": "kisiselveriler",
+      "name": {
+        "tr": "Kişisel Veriler",
+        "en": "Personal Data",
+        "ar": "البيانات الشخصية"
+      },
+      "description": {
+        "tr": "Kişisel verilerin korunması",
+        "en": "Protection of personal data",
+        "ar": "حماية البيانات الشخصية"
+      },
+      "path": "kisiselveriler",
+      "icon": "shield",
+      "category": "",
+      "status": "pause",
+      "desing": {
+        "header": [],
+        "body": [],
+        "footer": []
+      },
+      "index": 4
+    },
+    {
+      "id": "kullanicahaklari",
+      "name": {
+        "tr": "Kullanıcı Hakları",
+        "en": "User Rights",
+        "ar": "حقوق المستخدم"
+      },
+      "description": {
+        "tr": "Kullanıcı hakları",
+        "en": "User rights",
+        "ar": "حقوق المستخدم"
+      },
+      "path": "kullanicahaklari",
+      "icon": "gavel",
+      "category": "",
+      "status": "pause",
+      "desing": {
+        "header": [],
+        "body": [],
+        "footer": []
+      },
+      "index": 5
+    },
+    {
+      "id": "yasaluyari",
+      "name": {
+        "tr": "Yasal Uyarı",
+        "en": "Legal Notice",
+        "ar": "إشعار قانوني"
+      },
+      "description": {
+        "tr": "Yasal uyarı",
+        "en": "Legal notice",
+        "ar": "إشعار قانوني"
+      },
+      "path": "yasaluyari",
+      "icon": "policy",
+      "category": "",
+      "status": "pause",
+      "desing": {
+        "header": [],
+        "body": [],
+        "footer": []
+      },
+      "index": 6
+    },
+    {
+      "id": "cerez-politikasi",
+      "name": {
+        "tr": "Çerez Politikası",
+        "en": "Cookie Policy",
+        "ar": "سياسة ملفات تعريف الارتباط"
+      },
+      "description": {
+        "tr": "Çerez Politikası",
+        "en": "Cookie Policy",
+        "ar": "سياسة ملفات تعريف الارتباط"
+      },
+      "path": "cerez-politikasi",
+      "icon": "cookie",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [],
+        "footer": []
+      },
+      "index": 7
+    },
+    {
+      "id": "satici-bilgileri",
+      "name": {
+        "tr": "Satıcı Bilgileri",
+        "en": "Seller Information",
+        "ar": "بيانات البائع"
+      },
+      "description": {
+        "tr": "Satıcı Bilgileri",
+        "en": "Seller Information",
+        "ar": "بيانات البائع"
+      },
+      "path": "satici-bilgileri",
+      "icon": "storefront",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [],
+        "footer": []
+      },
+      "index": 8
+    },
+    {
+      "id": "islem-rehberi",
+      "name": {
+        "tr": "İşlem Rehberi",
+        "en": "Transaction Guide",
+        "ar": "دليل المعاملات"
+      },
+      "description": {
+        "tr": "Bu rehber, sitemiz üzerinde sık yapılan işlemleri ve bu işlemlerle ilgili haklarınızı adım adım açıklar. Amacımız, bir talebinizi hangi kanaldan ve nasıl…",
+        "en": "A step-by-step guide to common transactions on this website and your related rights: orders, returns, complaints and applications.",
+        "ar": "دليل خطوة بخطوة للمعاملات الشائعة في هذا الموقع وحقوقكم المتعلقة بها: الطلبات والإرجاع والشكاوى."
+      },
+      "path": "islem-rehberi",
+      "icon": "menu_book",
+      "category": "",
+      "status": "pause",
+      "desing": {
+        "header": [],
+        "body": [],
+        "footer": []
+      },
+      "index": 9
+    },
+    {
+      "name": {
+        "tr": "Hakkımızda",
+        "en": "About",
+        "ar": "من نحن"
+      },
+      "status": "play",
+      "id": "hakkimizda",
+      "path": "hakkimizda",
+      "category": "",
+      "url": "",
+      "index": 10,
+      "icon": "info",
+      "desing": {
+        "header": [],
+        "body": [
+          "e3in01"
+        ],
+        "footer": []
+      },
+      "pathnext": "",
+      "description": {
+        "tr": "Yün Studio, doğal kumaşlardan sade ve uzun ömürlü giysiler tasarlayan kurgusal bir demo moda mağazasıdır. Bu sitedeki ürünler, fiyatlar ve adresler kurgusaldır; gerçek bir satış yapılmaz.",
+        "en": "Lal Moda is a fictional demo fashion store designing simple, long-lasting garments from natural fabrics. Products, prices and addresses on this site are fictional and no real sale takes place.",
+        "ar": "لال مودا متجر موضة تجريبي افتراضي يصمم ملابس بسيطة ومتينة من أقمشة طبيعية. المنتجات والأسعار والعناوين في هذا الموقع افتراضية ولا يتم أي بيع فعلي."
+      }
+    },
+    {
+      "name": {
+        "tr": "İletişim",
+        "en": "Contact",
+        "ar": "اتصل بنا"
+      },
+      "status": "play",
+      "id": "iletisim",
+      "path": "iletisim",
+      "category": "",
+      "url": "",
+      "index": 11,
+      "icon": "contact_mail",
+      "desing": {
+        "header": [],
+        "body": [
+          "e3ct01",
+          "e3mp01"
+        ],
+        "footer": []
+      },
+      "pathnext": "",
+      "description": {
+        "tr": "Adres, telefon ve e-posta.",
+        "en": "Address, phone and email.",
+        "ar": "العنوان والهاتف والبريد."
+      }
+    },
+    {
+      "id": "onbilgilendirmeformu",
+      "name": {
+        "tr": "Ön Bilgilendirme Formu",
+        "en": "Pre-Contract Information",
+        "ar": "نموذج المعلومات المسبقة"
+      },
+      "description": {
+        "tr": "Ön Bilgilendirme Formu",
+        "en": "Pre-Contract Information",
+        "ar": "نموذج المعلومات المسبقة"
+      },
+      "path": "on-bilgilendirme-formu",
+      "icon": "gavel",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [],
+        "footer": []
+      },
+      "index": 12
+    },
+    {
+      "id": "mesafelisatis",
+      "name": {
+        "tr": "Mesafeli Satış Sözleşmesi",
+        "en": "Distance Sales Agreement",
+        "ar": "عقد البيع عن بُعد"
+      },
+      "description": {
+        "tr": "Mesafeli Satış Sözleşmesi",
+        "en": "Distance Sales Agreement",
+        "ar": "عقد البيع عن بُعد"
+      },
+      "path": "mesafeli-satis-sozlesmesi",
+      "icon": "gavel",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [],
+        "footer": []
+      },
+      "index": 13
+    },
+    {
+      "id": "iadeveteslimat",
+      "name": {
+        "tr": "İade ve Teslimat",
+        "en": "Returns and Delivery",
+        "ar": "الاسترجاع والتسليم"
+      },
+      "description": {
+        "tr": "İade ve Teslimat",
+        "en": "Returns and Delivery",
+        "ar": "الاسترجاع والتسليم"
+      },
+      "path": "iade-ve-teslimat",
+      "icon": "gavel",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [],
+        "footer": []
+      },
+      "index": 14
+    },
+    {
+      "id": "uyeliksozlesmesi",
+      "name": {
+        "tr": "Üyelik Sözleşmesi",
+        "en": "Membership Agreement",
+        "ar": "اتفاقية العضوية"
+      },
+      "description": {
+        "tr": "Üyelik Sözleşmesi",
+        "en": "Membership Agreement",
+        "ar": "اتفاقية العضوية"
+      },
+      "path": "uyelik-sozlesmesi",
+      "icon": "gavel",
+      "category": "",
+      "status": "pause",
+      "desing": {
+        "header": [],
+        "body": [],
+        "footer": []
+      },
+      "index": 15
+    }
+  ]
+}

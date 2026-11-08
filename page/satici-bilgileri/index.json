@@ -1,0 +1,46 @@
+{
+  "id": "satici-bilgileri",
+  "name": {
+    "tr": "Satıcı Bilgileri",
+    "en": "Seller Information",
+    "ar": "بيانات البائع"
+  },
+  "description": {
+    "tr": "Satıcı Bilgileri",
+    "en": "Seller Information",
+    "ar": "بيانات البائع"
+  },
+  "keyword": {
+    "tr": "Satıcı Bilgileri",
+    "en": "seller information, company details, distance sales",
+    "ar": "معلومات البائع, بيانات الشركة, البيع عن بعد"
+  },
+  "path": "satici-bilgileri",
+  "icon": "storefront",
+  "category": "",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [],
+    "footer": []
+  },
+  "index": 8,
+  "url": "",
+  "text": {
+    "tr": "<h2>Satıcı Bilgileri</h2>\n<p>Unvan: Yün Studio Ticaret A.Ş. (kurgusal) · Adres: Atatürk Bulvarı No: 12, Şahinbey, Gaziantep (kurgusal adres) · Telefon: +90 342 000 00 00 · E-posta: destek@ynstudio.example · Mersis No: DEMO-0000000000000000</p>\n<p>Bu bilgiler gerçek bir işletmeye ait değildir.</p>\n<p><em>Bu metin demo amaçlı örnektir; hukuki danışmanlık yerine geçmez.</em></p>",
+    "en": "<h2>Seller Information</h2>\n<p>Company name: Yün Studio Trading Inc. (fictional) · Address: 12 Ataturk Boulevard, Sahinbey, Gaziantep (fictional address) · Phone: +90 342 000 00 00 · Email: destek@ynstudio.example · Mersis No: DEMO-0000000000000000</p>\n<p>This information does not belong to a real business.</p>\n<p><em>This text is a sample for demonstration purposes and is not legal advice.</em></p>",
+    "ar": "<h2>بيانات البائع</h2>\n<p>اسم الشركة: Yün Studio للتجارة (افتراضية) · العنوان: شارع أتاتورك رقم 12، شاهين بي، غازي عنتاب (عنوان افتراضي) · الهاتف: +90 342 000 00 00 · البريد: destek@ynstudio.example · رقم ميرسيس: DEMO-0000000000000000</p>\n<p>هذه البيانات لا تخص نشاطًا تجاريًا حقيقيًا.</p>\n<p><em>هذا النص مثال لأغراض العرض التجريبي ولا يُعدّ استشارة قانونية.</em></p>"
+  },
+  "title": {
+    "tr": "Satıcı Bilgileri",
+    "en": "Seller Information",
+    "ar": "بيانات البائع"
+  },
+  "date": "2026-11-05T23:18:18.106Z",
+  "update": "2026-11-05T23:44:25.024Z",
+  "sablonIzi": "2d077797eafbf2bd",
+  "sablonIziDil": {
+    "en": "71e5b822be6a506e",
+    "ar": "ed6ea45c1c65966a"
+  }
+}

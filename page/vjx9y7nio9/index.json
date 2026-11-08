@@ -1,0 +1,68 @@
+{
+  "id": "vjx9y7nio9",
+  "name": {
+    "tr": "Deri omuz çantası",
+    "en": "Leather shoulder bag",
+    "ar": "حقيبة كتف جلدية"
+  },
+  "description": {
+    "tr": "Sade çizgili, iç gözlü, ayarlanabilir askılı hakiki deri çanta.",
+    "en": "A clean-lined genuine-leather bag with an inner pocket and adjustable strap.",
+    "ar": "حقيبة جلد طبيعي بخطوط بسيطة وجيب داخلي وحزام قابل للتعديل."
+  },
+  "keyword": {
+    "tr": "",
+    "en": "",
+    "ar": ""
+  },
+  "path": "deri-omuz-cantasi",
+  "icon": "inventory_2",
+  "category": "aksesuar",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [
+      "h4dsoc"
+    ],
+    "footer": []
+  },
+  "index": 3,
+  "url": "",
+  "text": {
+    "tr": "<p>Sade çizgili, iç gözlü, ayarlanabilir askılı hakiki deri çanta.</p>",
+    "en": "<p>A clean-lined genuine-leather bag with an inner pocket and adjustable strap.</p>",
+    "ar": "<p>حقيبة جلد طبيعي بخطوط بسيطة وجيب داخلي وحزام قابل للتعديل.</p>"
+  },
+  "title": {
+    "tr": "Deri omuz çantası",
+    "en": "Leather shoulder bag",
+    "ar": "حقيبة كتف جلدية"
+  },
+  "date": "2026-11-05T23:18:18.374Z",
+  "update": "2026-11-05T23:44:24.916Z",
+  "desc": {
+    "kumas": {
+      "tr": "Hakiki deri",
+      "en": "Genuine leather",
+      "ar": "جلد طبيعي"
+    },
+    "beden": {
+      "tr": "Tek ebat",
+      "en": "One size",
+      "ar": "مقاس واحد"
+    },
+    "bakim": {
+      "tr": "Nemli bezle silin",
+      "en": "Wipe with a damp cloth",
+      "ar": "امسح بقطعة قماش رطبة"
+    }
+  },
+  "price": 3200,
+  "stock": 25,
+  "stock_status": "in_stock",
+  "image": "/img/moda-urun-canta.webp",
+  "badges": [
+    "new"
+  ],
+  "sku": "deri-omuz-cantasi"
+}

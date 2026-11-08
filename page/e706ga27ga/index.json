@@ -1,0 +1,66 @@
+{
+  "id": "e706ga27ga",
+  "name": {
+    "tr": "İpek şal",
+    "en": "Silk scarf",
+    "ar": "وشاح حرير"
+  },
+  "description": {
+    "tr": "Soyut desenli, hafif ipek şal; 90×90 cm.",
+    "en": "A light silk scarf with an abstract print; 90×90 cm.",
+    "ar": "وشاح حرير خفيف بنقش تجريدي؛ 90×90 سم."
+  },
+  "keyword": {
+    "tr": "",
+    "en": "",
+    "ar": ""
+  },
+  "path": "ipek-sal",
+  "icon": "inventory_2",
+  "category": "aksesuar",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [
+      "tidde1"
+    ],
+    "footer": []
+  },
+  "index": 4,
+  "url": "",
+  "text": {
+    "tr": "<p>Soyut desenli, hafif ipek şal; 90×90 cm.</p>",
+    "en": "<p>A light silk scarf with an abstract print; 90×90 cm.</p>",
+    "ar": "<p>وشاح حرير خفيف بنقش تجريدي؛ 90×90 سم.</p>"
+  },
+  "title": {
+    "tr": "İpek şal",
+    "en": "Silk scarf",
+    "ar": "وشاح حرير"
+  },
+  "date": "2026-11-05T23:18:18.365Z",
+  "update": "2026-11-05T23:44:24.911Z",
+  "desc": {
+    "kumas": {
+      "tr": "%100 ipek",
+      "en": "100% silk",
+      "ar": "100٪ حرير"
+    },
+    "beden": {
+      "tr": "Tek ebat",
+      "en": "One size",
+      "ar": "مقاس واحد"
+    },
+    "bakim": {
+      "tr": "Elde hassas yıkama",
+      "en": "Hand wash gently",
+      "ar": "غسيل يدوي لطيف"
+    }
+  },
+  "price": 890,
+  "stock": 25,
+  "stock_status": "in_stock",
+  "image": "/img/moda-urun-sal.webp",
+  "badges": [],
+  "sku": "ipek-sal"
+}

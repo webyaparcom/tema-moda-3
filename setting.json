@@ -1,0 +1,63 @@
+{
+  "order": true,
+  "user": false,
+  "description": {
+    "tr": "Yün Studio: keten, yün ve denim parçalarla zamansız giyim — kadın ve erkek koleksiyonları, 14 gün iade. (Demo site)",
+    "en": "Lal Moda: timeless clothing in linen, wool and denim — women’s and men’s collections, 14-day returns. (Demo site)",
+    "ar": "لال مودا: ملابس خالدة من الكتان والصوف والدنيم — مجموعات نسائية ورجالية وإرجاع خلال 14 يومًا. (موقع تجريبي)"
+  },
+  "keyword": {
+    "tr": "moda, giyim, keten gömlek, palto, çanta",
+    "en": "fashion, clothing, linen shirt, coat, bag",
+    "ar": "موضة، ملابس، قميص كتان، معطف، حقيبة"
+  },
+  "category": "Eticaret",
+  "name": "Yün Studio",
+  "domain": "moda-3.webyapar.com",
+  "langs": {
+    "tr": true,
+    "en": true,
+    "ar": true,
+    "de": false,
+    "ru": false,
+    "es": false,
+    "fr": false,
+    "it": false,
+    "ja": false,
+    "zh": false,
+    "ko": false,
+    "pt": false
+  },
+  "logo": "logo.png",
+  "multi": false,
+  "publishMode": "static",
+  "font": {
+    "body": "open-sans",
+    "heading": "playfair-display",
+    "ar": {
+      "body": "ibm-plex-sans-arabic",
+      "heading": "noto-kufi-arabic"
+    }
+  },
+  "colorScheme": "auto",
+  "theme_color": "#4F6B2C",
+  "seo": {
+    "noindex": true
+  },
+  "cssTokens": {
+    "--mx-radius-sm": "13px",
+    "--mx-radius-md": "22px",
+    "--mx-radius-lg": "31px",
+    "--mx-radius-xl": "42px"
+  },
+  "eticaret": true,
+  "siteType": "eticaret",
+  "modSepet": true,
+  "modSiparis": true,
+  "modOdeme": true,
+  "currency": "₺",
+  "icon": "icon.png",
+  "modKargo": true,
+  "modUyeler": true,
+  "modUyeAdres": true
+}

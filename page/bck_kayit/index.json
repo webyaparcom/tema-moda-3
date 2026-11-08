@@ -1,0 +1,38 @@
+{
+  "id": "bck_kayit",
+  "name": {
+    "tr": "Kayıt",
+    "en": "Register",
+    "ar": "إنشاء حساب"
+  },
+  "description": {
+    "tr": "",
+    "en": "",
+    "ar": ""
+  },
+  "keyword": {
+    "tr": "",
+    "en": "",
+    "ar": ""
+  },
+  "path": "kayit",
+  "icon": "person_add",
+  "category": "",
+  "status": "pause",
+  "desing": {
+    "header": [],
+    "body": [
+      "mcbdzo"
+    ],
+    "footer": []
+  },
+  "index": 1,
+  "url": "",
+  "title": {
+    "tr": "Kayıt",
+    "en": "Register",
+    "ar": "إنشاء حساب"
+  },
+  "date": "2026-11-05T23:18:18.163Z",
+  "update": "2026-11-05T23:44:24.944Z"
+}

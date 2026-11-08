@@ -1,0 +1,38 @@
+{
+  "id": "bck_sifre",
+  "name": {
+    "tr": "Şifre sıfırlama",
+    "en": "Reset password",
+    "ar": "استعادة كلمة المرور"
+  },
+  "description": {
+    "tr": "",
+    "en": "",
+    "ar": ""
+  },
+  "keyword": {
+    "tr": "",
+    "en": "",
+    "ar": ""
+  },
+  "path": "sifre-sifirlama",
+  "icon": "lock_reset",
+  "category": "",
+  "status": "pause",
+  "desing": {
+    "header": [],
+    "body": [
+      "0y5tlv"
+    ],
+    "footer": []
+  },
+  "index": 2,
+  "url": "",
+  "title": {
+    "tr": "Şifre sıfırlama",
+    "en": "Reset password",
+    "ar": "استعادة كلمة المرور"
+  },
+  "date": "2026-11-05T23:18:18.163Z",
+  "update": "2026-11-05T23:44:24.949Z"
+}

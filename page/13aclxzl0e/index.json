@@ -1,0 +1,66 @@
+{
+  "id": "13aclxzl0e",
+  "name": {
+    "tr": "Terzi tadilat hizmeti",
+    "en": "Tailoring alteration service",
+    "ar": "خدمة تعديل الخياطة"
+  },
+  "description": {
+    "tr": "Paça, kol boyu ve bel daraltma; mağazadan alınan ürünlerde 5 iş gününde teslim.",
+    "en": "Hem, sleeve length and waist taking-in; ready in 5 business days for items bought from us.",
+    "ar": "تقصير الأطراف وطول الأكمام وتضييق الخصر؛ التسليم خلال 5 أيام عمل للمنتجات المشتراة منا."
+  },
+  "keyword": {
+    "tr": "",
+    "en": "",
+    "ar": ""
+  },
+  "path": "terzi-tadilat-hizmeti",
+  "icon": "content_cut",
+  "category": "dis-giyim",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [
+      "qkqixw"
+    ],
+    "footer": []
+  },
+  "index": 0,
+  "url": "",
+  "text": {
+    "tr": "<p>Paça, kol boyu ve bel daraltma; mağazadan alınan ürünlerde 5 iş gününde teslim.</p>",
+    "en": "<p>Hem, sleeve length and waist taking-in; ready in 5 business days for items bought from us.</p>",
+    "ar": "<p>تقصير الأطراف وطول الأكمام وتضييق الخصر؛ التسليم خلال 5 أيام عمل للمنتجات المشتراة منا.</p>"
+  },
+  "title": {
+    "tr": "Terzi tadilat hizmeti",
+    "en": "Tailoring alteration service",
+    "ar": "خدمة تعديل الخياطة"
+  },
+  "date": "2026-11-05T23:18:18.396Z",
+  "update": "2026-11-05T23:44:24.932Z",
+  "desc": {
+    "kumas": {
+      "tr": "Ürünün kendi kumaşı",
+      "en": "The garment’s own fabric",
+      "ar": "قماش القطعة نفسها"
+    },
+    "beden": {
+      "tr": "Tüm bedenler",
+      "en": "All sizes",
+      "ar": "جميع المقاسات"
+    },
+    "bakim": {
+      "tr": "Tadilattan sonra ürünün bakım etiketine uyun",
+      "en": "Follow the garment care label after alteration",
+      "ar": "اتبع بطاقة العناية بعد التعديل"
+    }
+  },
+  "price": 350,
+  "stock": 25,
+  "stock_status": "in_stock",
+  "image": "/img/moda-atolye.webp",
+  "badges": [],
+  "sku": "terzi-tadilat-hizmeti"
+}

@@ -1,0 +1,62 @@
+{
+  "id": "lqd0m1t5ew",
+  "name": {
+    "tr": "Yün palto",
+    "en": "Wool coat",
+    "ar": "معطف صوف"
+  },
+  "description": {
+    "tr": "Yün karışımlı, düz kesim, astarlı kış paltosu.",
+    "en": "A lined winter coat in a wool blend with a straight cut.",
+    "ar": "معطف شتوي مبطّن من مزيج الصوف بقصّة مستقيمة."
+  },
+  "keyword": {
+    "tr": "",
+    "en": "",
+    "ar": ""
+  },
+  "path": "yun-palto",
+  "icon": "inventory_2",
+  "category": "dis-giyim",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [
+      "jwz4aj"
+    ],
+    "footer": []
+  },
+  "index": 5,
+  "url": "",
+  "text": {
+    "tr": "<p>Yün karışımlı, düz kesim, astarlı kış paltosu.</p>",
+    "en": "<p>A lined winter coat in a wool blend with a straight cut.</p>",
+    "ar": "<p>معطف شتوي مبطّن من مزيج الصوف بقصّة مستقيمة.</p>"
+  },
+  "title": {
+    "tr": "Yün palto",
+    "en": "Wool coat",
+    "ar": "معطف صوف"
+  },
+  "date": "2026-11-05T23:18:18.356Z",
+  "update": "2026-11-05T23:44:24.905Z",
+  "desc": {
+    "kumas": {
+      "tr": "%70 yün, %30 polyester",
+      "en": "70% wool, 30% polyester",
+      "ar": "70٪ صوف، 30٪ بوليستر"
+    },
+    "beden": "S – XL",
+    "bakim": {
+      "tr": "Kuru temizleme",
+      "en": "Dry clean",
+      "ar": "تنظيف جاف"
+    }
+  },
+  "price": 4650,
+  "stock": 25,
+  "stock_status": "in_stock",
+  "image": "/img/moda-urun-palto.webp",
+  "badges": [],
+  "sku": "yun-palto"
+}

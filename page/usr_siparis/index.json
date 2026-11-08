@@ -1,0 +1,38 @@
+{
+  "id": "usr_siparis",
+  "name": {
+    "tr": "Siparişlerim",
+    "en": "My orders",
+    "ar": "طلباتي"
+  },
+  "description": {
+    "tr": "",
+    "en": "",
+    "ar": ""
+  },
+  "keyword": {
+    "tr": "",
+    "en": "",
+    "ar": ""
+  },
+  "path": "siparislerim",
+  "icon": "receipt_long",
+  "category": "",
+  "status": "pause",
+  "desing": {
+    "header": [],
+    "body": [
+      "5ic48z"
+    ],
+    "footer": []
+  },
+  "index": 0,
+  "url": "",
+  "title": {
+    "tr": "Siparişlerim",
+    "en": "My orders",
+    "ar": "طلباتي"
+  },
+  "date": "2026-11-05T23:18:18.163Z",
+  "update": "2026-11-05T23:44:24.954Z"
+}
