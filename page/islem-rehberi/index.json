@@ -1,0 +1,46 @@
+{
+  "id": "islem-rehberi",
+  "name": {
+    "tr": "İşlem Rehberi",
+    "en": "Transaction Guide",
+    "ar": "دليل المعاملات"
+  },
+  "description": {
+    "tr": "Bu rehber, sitemiz üzerinde sık yapılan işlemleri ve bu işlemlerle ilgili haklarınızı adım adım açıklar. Amacımız, bir talebinizi hangi kanaldan ve nasıl…",
+    "en": "A step-by-step guide to common transactions on this website and your related rights: orders, returns, complaints and applications.",
+    "ar": "دليل خطوة بخطوة للمعاملات الشائعة في هذا الموقع وحقوقكم المتعلقة بها: الطلبات والإرجاع والشكاوى."
+  },
+  "keyword": {
+    "tr": "İşlem Rehberi",
+    "en": "transaction guide, orders, returns, complaints",
+    "ar": "دليل المعاملات, الطلبات, الإرجاع, الشكاوى"
+  },
+  "path": "islem-rehberi",
+  "icon": "menu_book",
+  "category": "",
+  "status": "pause",
+  "desing": {
+    "header": [],
+    "body": [],
+    "footer": []
+  },
+  "index": 9,
+  "url": "",
+  "text": {
+    "tr": "<article class=\"wm-metin\">\n<h2>İşlem Rehberi</h2>\n<p class=\"lead\">Bu rehber, sitemiz üzerinde sık yapılan işlemleri ve bu işlemlerle ilgili haklarınızı adım adım açıklar. Amacımız, bir talebinizi hangi kanaldan ve nasıl iletebileceğinizi kolayca bulmanızı sağlamaktır.</p>\n<h3>Sipariş ve ödeme</h3>\n<p>Sipariş vermeden önce ön bilgilendirme formu ve mesafeli satış sözleşmesi size sunulur. Bu metinleri okuyup onayladıktan sonra ödemenizi tamamlayabilirsiniz. Siparişinize ilişkin onay ve sözleşme metinleri ayrıca e-posta adresinize gönderilir.</p>\n<h3>Sık yapılan talepler</h3>\n<p>Aşağıdaki işlemler için izlenecek yol şöyledir:</p>\n<ul>\n<li><strong>Sipariş takibi:</strong> Gönderim sonrasında iletilen kargo takip bilgisi ile.</li>\n<li><strong>Cayma ve iade:</strong> Teslimden itibaren on dört gün içinde {{iletisim_yonelme}} bildirimde bulunarak.</li>\n<li><strong>Ayıplı ürün bildirimi:</strong> Ürün fotoğrafları ve sipariş bilgisiyle birlikte müşteri hizmetlerine başvurarak.</li>\n<li><strong>Ticari ileti reddi:</strong> İletilerde yer alan ret bağlantısı veya müşteri hizmetleri aracılığıyla.</li>\n<li><strong>Kişisel veri başvurusu:</strong> KVKK Başvuru sayfasında açıklanan kanallarla.</li>\n</ul>\n<h3>Şikâyet ve uyuşmazlık</h3>\n<p>Talebinize verilen yanıttan memnun kalmamanız hâlinde, 6502 sayılı Tüketicinin Korunması Hakkında Kanun kapsamında Tüketici Hakem Heyetine veya Tüketici Mahkemesine başvurabilirsiniz. Kişisel verilere ilişkin başvurularınızın reddedilmesi veya yanıtsız kalması hâlinde Kişisel Verileri Koruma Kurulu’na şikâyet hakkınız bulunur.</p>\n<aside class=\"vurgu-kutusu\"><strong>Müşteri hizmetleri:</strong> {{iletisim_yonelme}}. Son güncelleme: 2026-11-05.</aside>\n</article>",
+    "en": "<article class=\"wm-metin\">\n<h2>Transaction Guide</h2>\n<p class=\"lead\">This guide explains, step by step, the transactions commonly carried out on our website and your rights concerning them. Our aim is to help you easily find through which channel and how you can submit a request.</p>\n<h3>Orders and payment</h3>\n<p>Before you place an order, the preliminary information form and the distance sales contract are presented to you. You can complete your payment after reading and approving these texts. The confirmation and contract texts for your order are also sent to your e-mail address.</p>\n<h3>Common requests</h3>\n<p>The steps to follow for the transactions below are as follows:</p>\n<ul>\n<li><strong>Order tracking:</strong> With the cargo tracking information sent after dispatch.</li>\n<li><strong>Withdrawal and return:</strong> By notifying us {{iletisim_yonelme}} within fourteen days of delivery.</li>\n<li><strong>Reporting a defective product:</strong> By contacting customer services with product photographs and order details.</li>\n<li><strong>Refusing commercial messages:</strong> Through the refusal link in the messages or through customer services.</li>\n<li><strong>Personal data application:</strong> Through the channels explained on the KVKK Application page.</li>\n</ul>\n<h3>Complaints and disputes</h3>\n<p>If you are not satisfied with the response to your request, you may apply to the Consumer Arbitration Committee or the Consumer Court under Law No. 6502 on the Protection of Consumers. If your applications concerning personal data are rejected or left unanswered, you have the right to complain to the Personal Data Protection Board.</p>\n<aside class=\"vurgu-kutusu\"><strong>Customer services:</strong> {{iletisim_yonelme}}. Last updated: 2026-11-05.</aside>\n</article>",
+    "ar": "<article class=\"wm-metin\">\n<h2>دليل المعاملات</h2>\n<p class=\"lead\">يشرح هذا الدليل خطوة بخطوة المعاملات الشائعة في موقعنا وحقوقكم المتعلقة بها. وهدفنا هو أن تجدوا بسهولة القناة المناسبة لتقديم طلبكم وطريقة تقديمه.</p>\n<h3>الطلب والدفع</h3>\n<p>قبل تقديم الطلب، يُعرض عليكم نموذج المعلومات الأولية وعقد البيع عن بُعد. ويمكنكم إتمام الدفع بعد قراءة هذين النصين والموافقة عليهما. كما تُرسل نصوص التأكيد والعقد الخاصة بطلبكم إلى عنوان بريدكم الإلكتروني.</p>\n<h3>الطلبات الشائعة</h3>\n<p>فيما يلي الطريقة المتبعة في المعاملات التالية:</p>\n<ul>\n<li><strong>تتبع الطلب:</strong> باستخدام معلومات تتبع الشحنة المرسلة بعد الشحن.</li>\n<li><strong>الانسحاب والإرجاع:</strong> بإبلاغنا {{iletisim_yonelme}} خلال أربعة عشر يومًا من التسليم.</li>\n<li><strong>الإبلاغ عن منتج معيب:</strong> بالتواصل مع خدمة العملاء مع صور المنتج وبيانات الطلب.</li>\n<li><strong>رفض الرسائل التجارية:</strong> عبر رابط الرفض الموجود في الرسائل أو عبر خدمة العملاء.</li>\n<li><strong>طلب متعلق بالبيانات الشخصية:</strong> عبر القنوات الموضحة في صفحة طلب KVKK.</li>\n</ul>\n<h3>الشكاوى والنزاعات</h3>\n<p>إذا لم تكونوا راضين عن الرد على طلبكم، يمكنكم اللجوء إلى هيئة تحكيم المستهلك أو محكمة المستهلك بموجب القانون رقم 6502 بشأن حماية المستهلك. وفي حال رفض طلباتكم المتعلقة بالبيانات الشخصية أو عدم الرد عليها، يحق لكم تقديم شكوى إلى مجلس حماية البيانات الشخصية.</p>\n<aside class=\"vurgu-kutusu\"><strong>خدمة العملاء:</strong> {{iletisim_yonelme}}. آخر تحديث: ⁦2026-11-05⁩.</aside>\n</article>"
+  },
+  "title": {
+    "tr": "İşlem Rehberi",
+    "en": "Transaction Guide",
+    "ar": "دليل المعاملات"
+  },
+  "date": "2026-11-05T23:18:18.106Z",
+  "update": "2026-11-05T23:18:18.106Z",
+  "sablonIzi": "0215aa6fd98b9a19",
+  "sablonIziDil": {
+    "en": "17a33743ca0aae76",
+    "ar": "f5e7ad0a36a69d8e"
+  }
+}

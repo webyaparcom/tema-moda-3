@@ -1,0 +1,38 @@
+{
+  "id": "bck_sepet",
+  "name": {
+    "tr": "Sepetim",
+    "en": "My cart",
+    "ar": "سلتي"
+  },
+  "description": {
+    "tr": "Sepetinizdeki ürünler.",
+    "en": "The products in your cart.",
+    "ar": "المنتجات في سلتك."
+  },
+  "keyword": {
+    "tr": "",
+    "en": "",
+    "ar": ""
+  },
+  "path": "sepetim",
+  "icon": "shopping_cart",
+  "category": "",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [
+      "397xw5"
+    ],
+    "footer": []
+  },
+  "index": 3,
+  "url": "",
+  "title": {
+    "tr": "Sepetim",
+    "en": "My cart",
+    "ar": "سلتي"
+  },
+  "date": "2026-11-05T23:18:18.163Z",
+  "update": "2026-11-05T23:44:24.973Z"
+}

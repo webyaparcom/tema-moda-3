@@ -1,0 +1,66 @@
+{
+  "id": "uwzsgarwef",
+  "name": {
+    "tr": "Hediye seti: deri çanta + ipek şal",
+    "en": "Gift set: leather bag + silk scarf",
+    "ar": "طقم هدية: حقيبة جلدية + وشاح حرير"
+  },
+  "description": {
+    "tr": "Deri omuz çantası ve ipek şal, hediye kutusunda.",
+    "en": "A leather shoulder bag and a silk scarf in a gift box.",
+    "ar": "حقيبة كتف جلدية ووشاح حرير في علبة هدايا."
+  },
+  "keyword": {
+    "tr": "",
+    "en": "",
+    "ar": ""
+  },
+  "path": "canta-sal-hediye-seti",
+  "icon": "redeem",
+  "category": "aksesuar",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [
+      "lyscvu"
+    ],
+    "footer": []
+  },
+  "index": 1,
+  "url": "",
+  "text": {
+    "tr": "<p>Deri omuz çantası ve ipek şal, hediye kutusunda.</p>",
+    "en": "<p>A leather shoulder bag and a silk scarf in a gift box.</p>",
+    "ar": "<p>حقيبة كتف جلدية ووشاح حرير في علبة هدايا.</p>"
+  },
+  "title": {
+    "tr": "Hediye seti: deri çanta + ipek şal",
+    "en": "Gift set: leather bag + silk scarf",
+    "ar": "طقم هدية: حقيبة جلدية + وشاح حرير"
+  },
+  "date": "2026-11-05T23:18:18.389Z",
+  "update": "2026-11-05T23:44:24.927Z",
+  "desc": {
+    "kumas": {
+      "tr": "Hakiki deri, %100 ipek",
+      "en": "Genuine leather, 100% silk",
+      "ar": "جلد طبيعي، 100٪ حرير"
+    },
+    "beden": {
+      "tr": "Tek ebat",
+      "en": "One size",
+      "ar": "مقاس واحد"
+    },
+    "bakim": {
+      "tr": "Şal elde yıkanır; çanta nemli bezle silinir",
+      "en": "Hand wash the scarf; wipe the bag with a damp cloth",
+      "ar": "يُغسل الوشاح يدويًا وتُمسح الحقيبة بقطعة رطبة"
+    }
+  },
+  "price": 3790,
+  "stock": 25,
+  "stock_status": "in_stock",
+  "image": "/img/moda-kategori-3.webp",
+  "badges": [],
+  "sku": "canta-sal-hediye-seti"
+}

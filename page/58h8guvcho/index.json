@@ -1,0 +1,62 @@
+{
+  "id": "58h8guvcho",
+  "name": {
+    "tr": "Denim ceket",
+    "en": "Denim jacket",
+    "ar": "جاكيت دنيم"
+  },
+  "description": {
+    "tr": "Orta ağırlıkta pamuklu denim, klasik kesim.",
+    "en": "Mid-weight cotton denim in a classic cut.",
+    "ar": "دنيم قطني متوسط الوزن بقصّة كلاسيكية."
+  },
+  "keyword": {
+    "tr": "",
+    "en": "",
+    "ar": ""
+  },
+  "path": "denim-ceket",
+  "icon": "inventory_2",
+  "category": "dis-giyim",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [
+      "mfyr7d"
+    ],
+    "footer": []
+  },
+  "index": 6,
+  "url": "",
+  "text": {
+    "tr": "<p>Orta ağırlıkta pamuklu denim, klasik kesim.</p>",
+    "en": "<p>Mid-weight cotton denim in a classic cut.</p>",
+    "ar": "<p>دنيم قطني متوسط الوزن بقصّة كلاسيكية.</p>"
+  },
+  "title": {
+    "tr": "Denim ceket",
+    "en": "Denim jacket",
+    "ar": "جاكيت دنيم"
+  },
+  "date": "2026-11-05T23:18:18.349Z",
+  "update": "2026-11-05T23:44:24.900Z",
+  "desc": {
+    "kumas": {
+      "tr": "%100 pamuk",
+      "en": "100% cotton",
+      "ar": "100٪ قطن"
+    },
+    "beden": "S – XL",
+    "bakim": {
+      "tr": "30 °C’de yıkama",
+      "en": "Wash at 30 °C",
+      "ar": "غسيل عند 30 °م"
+    }
+  },
+  "price": 2150,
+  "stock": 25,
+  "stock_status": "in_stock",
+  "image": "/img/moda-urun-ceket.webp",
+  "badges": [],
+  "sku": "denim-ceket"
+}

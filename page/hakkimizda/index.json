@@ -1,0 +1,46 @@
+{
+  "name": {
+    "tr": "Hakkımızda",
+    "en": "About",
+    "ar": "من نحن"
+  },
+  "status": "play",
+  "category": "",
+  "id": "hakkimizda",
+  "url": "",
+  "path": "hakkimizda",
+  "index": 10,
+  "icon": "info",
+  "desing": {
+    "header": [],
+    "body": [
+      "e3in01"
+    ],
+    "footer": []
+  },
+  "pathnext": "",
+  "description": {
+    "tr": "Yün Studio, doğal kumaşlardan sade ve uzun ömürlü giysiler tasarlayan kurgusal bir demo moda mağazasıdır. Bu sitedeki ürünler, fiyatlar ve adresler kurgusaldır; gerçek bir satış yapılmaz.",
+    "en": "Lal Moda is a fictional demo fashion store designing simple, long-lasting garments from natural fabrics. Products, prices and addresses on this site are fictional and no real sale takes place.",
+    "ar": "لال مودا متجر موضة تجريبي افتراضي يصمم ملابس بسيطة ومتينة من أقمشة طبيعية. المنتجات والأسعار والعناوين في هذا الموقع افتراضية ولا يتم أي بيع فعلي."
+  },
+  "spot": {
+    "tr": "",
+    "en": "",
+    "ar": ""
+  },
+  "desc": {},
+  "title": {
+    "tr": "Hakkımızda",
+    "en": "About",
+    "ar": "من نحن"
+  },
+  "keyword": {
+    "tr": "",
+    "en": "",
+    "ar": ""
+  },
+  "text": {},
+  "update": "2026-11-05T23:44:24.997Z",
+  "date": "2026-10-30"
+}
