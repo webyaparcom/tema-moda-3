@@ -30,6 +30,12 @@
           "tr": "(yeni sekmede açılır)",
           "en": "(opens in a new tab)",
           "ar": "(يفتح في علامة تبويب جديدة)"
+        },
+        "girisHref": "",
+        "girisText": {
+          "tr": "Üye Girişi",
+          "en": "Login",
+          "ar": "تسجيل الدخول"
         }
       },
       "version": "1.0.0",
@@ -56,9 +62,9 @@
           "ar": "مرحبًا بك!"
         },
         "toplinks": {
-          "tr": "Kampanyalar|#|Sipariş Takibi|#|Yardım|#",
-          "en": "Campaigns|#|Order Tracking|#|Help|#",
-          "ar": "العروض|#|تتبع الطلب|#|المساعدة|#"
+          "tr": "Teslimat ve iade|/teslimat|Hakkımızda|/hakkimizda|İletişim|/iletisim",
+          "en": "Delivery and returns|/teslimat|About|/hakkimizda|Contact|/iletisim",
+          "ar": "التسليم والاسترجاع|/teslimat|من نحن|/hakkimizda|اتصل بنا|/iletisim"
         },
         "searchPlaceholder": {
           "tr": "Ürün ara...",
@@ -123,95 +129,27 @@
       "data": [
         {
           "name": {
-            "tr": "Kuruyemiş",
-            "en": "Nuts",
-            "ar": "المكسرات"
+            "tr": "Giyim",
+            "en": "Clothing",
+            "ar": "الملابس"
           },
-          "url": "#",
-          "children": [
-            {
-              "name": {
-                "tr": "Fındık",
-                "en": "Hazelnut",
-                "ar": "البندق"
-              },
-              "url": "#"
-            },
-            {
-              "name": {
-                "tr": "Badem",
-                "en": "Almond",
-                "ar": "اللوز"
-              },
-              "url": "#"
-            }
-          ]
+          "url": "/giyim"
         },
         {
           "name": {
-            "tr": "Yöresel Ürünler",
-            "en": "Local Products",
-            "ar": "منتجات محلية"
+            "tr": "Dış giyim",
+            "en": "Outerwear",
+            "ar": "ملابس خارجية"
           },
-          "url": "#",
-          "children": [
-            {
-              "name": {
-                "tr": "Pekmez",
-                "en": "Molasses",
-                "ar": "دبس"
-              },
-              "url": "#"
-            },
-            {
-              "name": {
-                "tr": "Tereyağı",
-                "en": "Butter",
-                "ar": "الزبدة"
-              },
-              "url": "#"
-            }
-          ]
+          "url": "/dis-giyim"
         },
         {
           "name": {
-            "tr": "Kuru Meyve",
-            "en": "Dried Fruit",
-            "ar": "الفواكه المجففة"
+            "tr": "Çanta ve aksesuar",
+            "en": "Bags and accessories",
+            "ar": "حقائب وإكسسوارات"
           },
-          "url": "#"
-        },
-        {
-          "name": {
-            "tr": "Yeni Ürünler",
-            "en": "New Products",
-            "ar": "منتجات جديدة"
-          },
-          "url": "#"
-        },
-        {
-          "name": {
-            "tr": "Lokum",
-            "en": "Turkish Delight",
-            "ar": "راحة الحلقوم"
-          },
-          "url": "#"
-        },
-        {
-          "name": {
-            "tr": "Kahve",
-            "en": "Coffee",
-            "ar": "القهوة"
-          },
-          "url": "#"
-        },
-        {
-          "name": {
-            "tr": "Draje",
-            "en": "Dragee",
-            "ar": "الدراجيه"
-          },
-          "url": "#"
+          "url": "/aksesuar"
         }
       ],
       "index": 1
@@ -483,7 +421,7 @@
           "text": {
             "tr": "Kategorilerden ürününüzü seçin; özellik ve fiyatı net görürsünüz.",
             "en": "Pick your product from the categories; specs and price are clear.",
-            "ar": "اختر منتجك من الفوات؛ المواصفات والسعر واضحان."
+            "ar": "اختر منتجك من الفئات؛ المواصفات والسعر واضحان."
           }
         },
         {
@@ -496,7 +434,7 @@
           "text": {
             "tr": "Sepeti onaylayın, ödeme adımını tamamlayın.",
             "en": "Confirm the cart and complete the checkout step.",
-            "ar": "أعد السلة وأتمم خطوة الدفع."
+            "ar": "أكّد السلة وأتمم خطوة الدفع."
           }
         },
         {
@@ -522,7 +460,7 @@
           "text": {
             "tr": "Ürün kapınıza ulaşır; iade süresi boyunca koşullar açıktır.",
             "en": "The product reaches your door; the return window is clear.",
-            "ar": "يصلك المنتج وباب الرجوع واضحًا."
+            "ar": "يصلك المنتج وتبقى شروط الإرجاع واضحة طوال المدة."
           }
         }
       ],
