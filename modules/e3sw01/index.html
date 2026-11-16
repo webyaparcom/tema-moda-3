@@ -1,1130 +1,431 @@
-<div class="modulex-cartw">
-  <button type="button" class="modulex-cartw-fab" onclick="mxCartDrawerToggle()" aria-label="{{cartTitle}}">
-    <span class="material-symbols-outlined" aria-hidden="true">shopping_cart</span>
-    <span class="modulex-cartw-badge" data-mx-cart-badge>0</span>
+<div id="sw2Root" class="sw2-widget" data-sw2-count="0">
+  <button type="button" class="sw2-trigger" aria-haspopup="true" aria-expanded="false" aria-label="{{cartTitle}}">
+    <span class="sw2-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="9" cy="21" r="1.4"></circle>
+        <circle cx="18" cy="21" r="1.4"></circle>
+        <path d="M2.5 3h2.4l2.3 12.2a2 2 0 0 0 2 1.6h8.4a2 2 0 0 0 2-1.6l1.6-8.4H6.2"></path>
+      </svg>
+    </span>
+    <span class="sw2-badge" data-sw2-badge>0</span>
   </button>
 
-  <div class="modulex-cartw-overlay" data-mx-cart-overlay onclick="mxCartDrawerClose()"></div>
+  <div class="sw2-overlay" data-sw2-overlay hidden></div>
 
-  <aside class="modulex-cartw-drawer" data-mx-cart-drawer aria-label="{{cartTitle}}">
-    <div class="modulex-cartw-head">
-      <div class="modulex-cartw-title">
-        <span class="material-symbols-outlined" aria-hidden="true">shopping_cart</span>
-        {{cartTitle}}
-      </div>
-      <button type="button" class="modulex-cartw-close" onclick="mxCartDrawerClose()" aria-label="{{closeText}}">
-        <span class="material-symbols-outlined" aria-hidden="true">close</span>
+  <div class="sw2-dropdown" data-sw2-dropdown hidden>
+    <div class="sw2-header">
+      <span class="sw2-title">{{cartTitle}}</span>
+      <button type="button" class="sw2-close" data-sw2-close aria-label="{{closeText}}">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <path d="M6 6l12 12M18 6L6 18"></path>
+        </svg>
       </button>
     </div>
-    <div class="modulex-cartw-list" data-mx-cart-list></div>
-    <div class="modulex-cartw-empty" data-mx-cart-empty>
-      <span class="material-symbols-outlined" aria-hidden="true">production_quantity_limits</span>
-      <p>{{emptyText}}</p>
-    </div>
-    <div class="modulex-cartw-foot" data-mx-cart-foot>
-      <div class="modulex-cartw-total">
-        <span>{{totalText}}</span>
-        <strong data-mx-cart-total>0,00 {{currency}}</strong>
-      </div>
-      <a class="modulex-cartw-go" href="/{{lang}}/{{cartUrl}}/">{{goCartText}}</a>
-    </div>
-  </aside>
 
-  <div class="modulex-cartw-toast" data-mx-cart-toast>{{addedText}}</div>
-
-  <div class="modulex-qvmodal" data-mx-qv-modal aria-hidden="true">
-    <div class="modulex-qvmodal-overlay" data-mx-qv-close></div>
-    <div class="modulex-qvmodal-panel" role="dialog" aria-modal="true" aria-label="{{quickViewTitle}}">
-      <button type="button" class="modulex-qvmodal-close" data-mx-qv-close aria-label="{{closeText}}">
-        <span class="material-symbols-outlined" aria-hidden="true">close</span>
-      </button>
-      <div class="modulex-qvmodal-img" data-mx-qv-img></div>
-      <div class="modulex-qvmodal-body">
-        <h3 class="modulex-qvmodal-name" data-mx-qv-name></h3>
-        <p class="modulex-qvmodal-price" data-mx-qv-price></p>
-        <div class="modulex-qvmodal-actions">
-          <a class="modulex-qvmodal-detail" data-mx-qv-url href="#">{{quickViewDetailText}}</a>
-          <button type="button" class="modulex-qvmodal-add" data-mx-qv-add>{{quickViewAddText}}</button>
-        </div>
+    <div class="sw2-body" data-sw2-body>
+      <div class="sw2-empty" data-sw2-empty>
+        <span class="sw2-empty-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1.4"></circle>
+            <circle cx="18" cy="21" r="1.4"></circle>
+            <path d="M2.5 3h2.4l2.3 12.2a2 2 0 0 0 2 1.6h8.4a2 2 0 0 0 2-1.6l1.6-8.4H6.2"></path>
+          </svg>
+        </span>
+        <p class="sw2-empty-text">{{emptyText}}</p>
       </div>
+
+      <ul class="sw2-list" data-sw2-list></ul>
+
+      <template data-sw2-item-template>
+        <li class="sw2-item" data-sw2-item>
+          <div class="sw2-item-img" data-sw2-item-img></div>
+          <div class="sw2-item-info">
+            <span class="sw2-item-name" data-sw2-item-name></span>
+            <span class="sw2-item-price" data-sw2-item-price></span>
+            <div class="sw2-item-qty">
+              <button type="button" class="sw2-qty-btn sw2-qty-minus" data-sw2-qty-minus aria-label="{{decreaseText}}">-</button>
+              <span class="sw2-qty-value" data-sw2-qty-value></span>
+              <button type="button" class="sw2-qty-btn sw2-qty-plus" data-sw2-qty-plus aria-label="{{increaseText}}">+</button>
+            </div>
+          </div>
+          <button type="button" class="sw2-item-remove" data-sw2-item-remove aria-label="{{removeText}}">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 6h18M8 6V4a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2m2 0-1 14a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1L6 6"></path>
+            </svg>
+          </button>
+        </li>
+      </template>
+    </div>
+
+    <div class="sw2-footer" data-sw2-footer>
+      <div class="sw2-total">
+        <span class="sw2-total-label">{{totalText}}</span>
+        <span class="sw2-total-value" data-sw2-total-value>0</span>
+      </div>
+      <button type="button" class="sw2-checkout-btn" data-sw2-checkout>{{goCartText}}</button>
     </div>
   </div>
+
+  <style>
+    #sw2Root {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    #sw2Root .sw2-trigger {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      padding: 0;
+      border: 1px solid var(--et-border);
+      border-radius: var(--et-radius-sm);
+      background: var(--et-bg-elevated);
+      color: var(--et-text);
+      cursor: pointer;
+      transition: var(--et-transition);
+    }
+
+    #sw2Root .sw2-trigger:hover {
+      background: var(--et-bg-hover);
+      border-color: var(--et-primary);
+      color: var(--et-primary);
+    }
+
+    #sw2Root .sw2-icon {
+      display: inline-flex;
+    }
+
+    #sw2Root .sw2-badge {
+      position: absolute;
+      top: -6px;
+      right: -6px;
+      min-width: 18px;
+      height: 18px;
+      padding: 0 4px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      font-weight: 700;
+      line-height: 1;
+      border-radius: 999px;
+      background: var(--et-badge-bg);
+      color: var(--et-badge-text);
+      transition: var(--et-transition);
+    }
+
+    #sw2Root .sw2-badge:empty,
+    #sw2Root[data-sw2-count="0"] .sw2-badge {
+      opacity: 0;
+      transform: scale(0.6);
+    }
+
+    #sw2Root .sw2-overlay {
+      position: fixed;
+      inset: 0;
+      background: var(--et-overlay-bg);
+      z-index: 998;
+      animation: sw2FadeIn var(--et-transition-fast) ease;
+    }
+
+    #sw2Root .sw2-dropdown {
+      position: absolute;
+      top: calc(100% + 10px);
+      right: 0;
+      width: 340px;
+      max-width: 92vw;
+      max-height: 70vh;
+      display: flex;
+      flex-direction: column;
+      background: var(--et-bg-elevated);
+      border: 1px solid var(--et-border);
+      border-radius: var(--et-radius);
+      box-shadow: var(--et-shadow);
+      z-index: 999;
+      overflow: hidden;
+      animation: sw2SlideDown var(--et-transition) ease;
+      transform-origin: top right;
+    }
+
+    #sw2Root .sw2-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--et-border);
+    }
+
+    #sw2Root .sw2-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--et-text);
+    }
+
+    #sw2Root .sw2-close {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      border: none;
+      background: transparent;
+      color: var(--et-text-muted);
+      cursor: pointer;
+      border-radius: var(--et-radius-sm);
+      transition: var(--et-transition-fast);
+    }
+
+    #sw2Root .sw2-close:hover {
+      background: var(--et-bg-hover);
+      color: var(--et-text);
+    }
+
+    #sw2Root .sw2-body {
+      flex: 1;
+      overflow-y: auto;
+      padding: 8px 0;
+    }
+
+    #sw2Root .sw2-empty {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 40px 20px;
+      color: var(--et-text-muted);
+      text-align: center;
+    }
+
+    #sw2Root .sw2-empty-icon {
+      color: var(--et-text-muted);
+      opacity: 0.6;
+    }
+
+    #sw2Root .sw2-empty-text {
+      font-size: 13px;
+      margin: 0;
+    }
+
+    #sw2Root .sw2-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    #sw2Root .sw2-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 16px;
+      border-bottom: 1px solid var(--et-border);
+      animation: sw2FadeIn var(--et-transition-fast) ease;
+    }
+
+    #sw2Root .sw2-item:last-child {
+      border-bottom: none;
+    }
+
+    #sw2Root .sw2-item-img {
+      width: 44px;
+      height: 44px;
+      flex-shrink: 0;
+      border-radius: var(--et-radius-sm);
+      background-color: var(--et-bg-hover);
+      background-size: cover;
+      background-position: center;
+    }
+
+    #sw2Root .sw2-item-info {
+      flex: 1;
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    #sw2Root .sw2-item-name {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--et-text);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    #sw2Root .sw2-item-price {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--et-price-color);
+    }
+
+    #sw2Root .sw2-item-qty {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 2px;
+    }
+
+    #sw2Root .sw2-qty-btn {
+      width: 20px;
+      height: 20px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--et-border);
+      border-radius: var(--et-radius-sm);
+      background: var(--et-bg-elevated);
+      color: var(--et-text);
+      font-size: 12px;
+      line-height: 1;
+      cursor: pointer;
+      transition: var(--et-transition-fast);
+    }
+
+    #sw2Root .sw2-qty-btn:hover {
+      border-color: var(--et-primary);
+      color: var(--et-primary);
+    }
+
+    #sw2Root .sw2-qty-value {
+      min-width: 16px;
+      text-align: center;
+      font-size: 12px;
+      color: var(--et-text);
+    }
+
+    #sw2Root .sw2-item-remove {
+      flex-shrink: 0;
+      width: 28px;
+      height: 28px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      background: transparent;
+      color: var(--et-text-muted);
+      cursor: pointer;
+      border-radius: var(--et-radius-sm);
+      transition: var(--et-transition-fast);
+    }
+
+    #sw2Root .sw2-item-remove:hover {
+      background: var(--et-danger-bg);
+      color: var(--et-danger);
+    }
+
+    #sw2Root .sw2-footer {
+      padding: 14px 16px;
+      border-top: 1px solid var(--et-border);
+      background: var(--et-bg-elevated);
+    }
+
+    #sw2Root .sw2-total {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+
+    #sw2Root .sw2-total-label {
+      font-size: 13px;
+      color: var(--et-text-muted);
+    }
+
+    #sw2Root .sw2-total-value {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--et-price-color);
+    }
+
+    #sw2Root .sw2-checkout-btn {
+      width: 100%;
+      padding: 11px 16px;
+      border: none;
+      border-radius: var(--et-radius-sm);
+      background: var(--et-primary);
+      color: var(--et-on-primary);
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: var(--et-transition-fast);
+    }
+
+    #sw2Root .sw2-checkout-btn:hover {
+      background: var(--et-primary-hover);
+    }
+
+    @keyframes sw2SlideDown {
+      from {
+        opacity: 0;
+        transform: translateY(-8px) scale(0.98);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    @keyframes sw2FadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @media (max-width: 480px) {
+      #sw2Root .sw2-dropdown {
+        position: fixed;
+        top: auto;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        max-width: 100%;
+        max-height: 80vh;
+        border-radius: var(--et-radius) var(--et-radius) 0 0;
+        animation: sw2SlideUpMobile var(--et-transition) ease;
+      }
+    }
+
+    @keyframes sw2SlideUpMobile {
+      from {
+        opacity: 0;
+        transform: translateY(16px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    
+  
+  /* P18 a11y focus-visible (sw2-dropdown) */
+  .sw2-trigger:focus-visible,
+  .sw2-dropdown button:focus-visible,
+  .sw2-dropdown a:focus-visible,
+  .sw2-qty-btn:focus-visible,
+  .sw2-item-remove:focus-visible,
+  [data-sw2-close]:focus-visible,
+  [data-sw2-checkout]:focus-visible {
+    outline: 3px solid var(--mx-et-clay-warm, #C97B4A);
+    outline-offset: 2px;
+  }
+@media (prefers-reduced-motion: reduce) {
+      #sw2Root .sw2-dropdown,
+      #sw2Root .sw2-overlay,
+      #sw2Root .sw2-item,
+      #sw2Root .sw2-badge,
+      #sw2Root .sw2-trigger,
+      #sw2Root .sw2-qty-btn,
+      #sw2Root .sw2-item-remove,
+      #sw2Root .sw2-checkout-btn {
+        animation: none !important;
+        transition: none !important;
+      }
+    }
+  </style>
 </div>
-
-<style>
-  /* tema3 scroll-top referansi: right/bottom 16px (1:1 oran) */
-  .modulex-cartw-fab {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    margin-right: 16px;
-    margin-bottom: 16px;
-    width: 56px;
-    height: 56px;
-    border-radius: 50%;
-    border: none;
-    background: --fabbg--;
-    color: --fabcolor--;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
-    z-index: 9000;
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
-    box-sizing: border-box;
-  }
-
-  .modulex-cartw-fab:hover {
-    transform: translateY(-3px) scale(1.05);
-    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.3);
-  }
-
-  .modulex-cartw-fab .material-symbols-outlined {
-    font-size: 26px;
-  }
-
-  .modulex-cartw-badge {
-    position: absolute;
-    top: -4px;
-    right: -4px;
-    min-width: 22px;
-    height: 22px;
-    padding: 0 5px;
-    border-radius: 11px;
-    background: --badgebg--;
-    color: --badgecolor--;
-    font-size: 12px;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-  }
-
-  .modulex-cartw-badge.modulex-cartw-pulse {
-    animation: mxCartPulse 0.4s ease;
-  }
-
-  @keyframes mxCartPulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.5); }
-    100% { transform: scale(1); }
-  }
-
-  .modulex-cartw-overlay {
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.45);
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.3s ease;
-    z-index: 9001;
-  }
-
-  .modulex-cartw.modulex-cartw-open .modulex-cartw-overlay {
-    opacity: 1;
-    pointer-events: auto;
-  }
-
-  .modulex-cartw-drawer {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 360px;
-    max-width: 92vw;
-    height: 100vh;
-    background: --drawerbg--;
-    color: --drawercolor--;
-    display: flex;
-    flex-direction: column;
-    transform: translateX(105%);
-    transition: transform 0.35s ease;
-    z-index: 9002;
-    box-shadow: -8px 0 30px rgba(0, 0, 0, 0.2);
-    box-sizing: border-box;
-  }
-
-  .modulex-cartw.modulex-cartw-open .modulex-cartw-drawer {
-    transform: translateX(0);
-  }
-
-  .modulex-cartw-head {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 16px 18px;
-    border-bottom: 1px solid --bordercolor--;
-  }
-
-  .modulex-cartw-title {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 17px;
-    font-weight: 700;
-  }
-
-  .modulex-cartw-close {
-    width: 44px;
-    height: 44px;
-    border: none;
-    background: transparent;
-    color: --drawercolor--;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px;
-    transition: background-color 0.2s ease;
-  }
-
-  .modulex-cartw-close:hover {
-    background: rgba(0, 0, 0, 0.06);
-  }
-
-  .modulex-cartw-list {
-    flex: 1;
-    overflow-y: auto;
-    padding: 12px 18px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .modulex-cartw-item {
-    display: flex;
-    gap: 12px;
-    align-items: center;
-    border: 1px solid --bordercolor--;
-    border-radius: 10px;
-    padding: 10px;
-    animation: mxCartItemIn 0.3s ease;
-    box-sizing: border-box;
-  }
-
-  @keyframes mxCartItemIn {
-    from { opacity: 0; transform: translateY(8px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-
-  .modulex-cartw-item-img {
-    width: 54px;
-    height: 54px;
-    border-radius: 8px;
-    object-fit: cover;
-    background: --bordercolor--;
-    flex-shrink: 0;
-  }
-
-  .modulex-cartw-item-noimg {
-    width: 54px;
-    height: 54px;
-    border-radius: 8px;
-    background: --bordercolor--;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-  }
-
-  .modulex-cartw-item-info {
-    flex: 1;
-    min-width: 0;
-  }
-
-  .modulex-cartw-item-name {
-    font-size: 14px;
-    font-weight: 600;
-    margin: 0 0 4px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-
-  .modulex-cartw-item-price {
-    font-size: 13px;
-    color: --pricecolor--;
-    font-weight: 700;
-  }
-
-  .modulex-cartw-item-qty {
-    display: flex;
-    align-items: center;
-    gap: 4px;
-  }
-
-  .modulex-cartw-item-qty button {
-    width: 28px;
-    height: 28px;
-    border: 1px solid --bordercolor--;
-    background: transparent;
-    color: --drawercolor--;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 15px;
-    line-height: 1;
-    transition: background-color 0.2s ease;
-  }
-
-  .modulex-cartw-item-qty button:hover {
-    background: rgba(0, 0, 0, 0.06);
-  }
-
-  .modulex-cartw-item-qty span {
-    min-width: 20px;
-    text-align: center;
-    font-size: 14px;
-    font-weight: 600;
-  }
-
-  .modulex-cartw-item-remove {
-    border: none;
-    background: transparent;
-    color: --removecolor--;
-    cursor: pointer;
-    width: 34px;
-    height: 34px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 6px;
-    transition: background-color 0.2s ease;
-  }
-
-  .modulex-cartw-item-remove:hover {
-    background: rgba(229, 57, 53, 0.1);
-  }
-
-  .modulex-cartw-empty {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    padding: 40px 18px;
-    color: --drawercolor--;
-    opacity: 0.7;
-    text-align: center;
-  }
-
-  .modulex-cartw-empty .material-symbols-outlined {
-    font-size: 44px;
-  }
-
-  .modulex-cartw.modulex-cartw-isempty .modulex-cartw-empty {
-    display: flex;
-  }
-
-  .modulex-cartw.modulex-cartw-isempty .modulex-cartw-foot {
-    display: none;
-  }
-
-  .modulex-cartw-foot {
-    padding: 16px 18px;
-    border-top: 1px solid --bordercolor--;
-  }
-
-  .modulex-cartw-total {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 15px;
-    margin-bottom: 12px;
-  }
-
-  .modulex-cartw-total strong {
-    font-size: 18px;
-    color: --pricecolor--;
-  }
-
-  .modulex-cartw-go {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 46px;
-    border-radius: 10px;
-    background: --fabbg--;
-    color: --fabcolor--;
-    font-size: 15px;
-    font-weight: 700;
-    text-decoration: none;
-    cursor: pointer;
-    transition: filter 0.25s ease;
-    box-sizing: border-box;
-  }
-
-  .modulex-cartw-go:hover {
-    filter: brightness(1.08);
-  }
-
-  .modulex-cartw-toast {
-    position: fixed;
-    left: 50%;
-    bottom: 30px;
-    transform: translateX(-50%) translateY(20px);
-    background: --toastbg--;
-    color: --toastcolor--;
-    padding: 12px 22px;
-    border-radius: 10px;
-    font-size: 14px;
-    font-weight: 600;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.3s ease, transform 0.3s ease;
-    z-index: 9005;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
-  }
-
-  .modulex-cartw-toast.modulex-cartw-toast-show {
-    opacity: 1;
-    transform: translateX(-50%) translateY(0);
-  }
-
-  /* Hizli gorunum modali — vitrin hover aksiyonlari (Paket 625) */
-  .modulex-qvmodal {
-    position: fixed;
-    inset: 0;
-    z-index: 9100;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 16px;
-    box-sizing: border-box;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.25s ease;
-  }
-
-  .modulex-qvmodal.modulex-qvmodal-open {
-    opacity: 1;
-    pointer-events: auto;
-  }
-
-  .modulex-qvmodal[aria-hidden="false"] {
-    opacity: 1;
-    pointer-events: auto;
-  }
-
-  .modulex-qvmodal-overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.5);
-    cursor: pointer;
-  }
-
-  .modulex-qvmodal-panel {
-    position: relative;
-    z-index: 1;
-    width: min(420px, 96vw);
-    background: --drawerbg--;
-    color: --drawercolor--;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.25);
-    transform: translateY(12px);
-    transition: transform 0.25s ease;
-  }
-
-  .modulex-qvmodal.modulex-qvmodal-open .modulex-qvmodal-panel {
-    transform: translateY(0);
-  }
-
-  .modulex-qvmodal[aria-hidden="false"] .modulex-qvmodal-panel {
-    transform: translateY(0);
-  }
-
-  .modulex-qvmodal-close {
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    width: 36px;
-    height: 36px;
-    border: none;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.92);
-    color: #111111;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 2;
-  }
-
-  .modulex-qvmodal-img {
-    aspect-ratio: 1 / 1;
-    background: --bordercolor--;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-  }
-
-  .modulex-qvmodal-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .modulex-qvmodal-body {
-    padding: 16px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .modulex-qvmodal-name {
-    margin: 0;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 1.35;
-  }
-
-  .modulex-qvmodal-price {
-    margin: 0;
-    font-size: 18px;
-    font-weight: 700;
-    color: --pricecolor--;
-  }
-
-  .modulex-qvmodal-actions {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    margin-top: 4px;
-  }
-
-  .modulex-qvmodal-detail {
-    flex: 1;
-    min-width: 120px;
-    text-align: center;
-    padding: 10px 14px;
-    border: 1px solid --bordercolor--;
-    border-radius: 4px;
-    color: inherit;
-    text-decoration: none;
-    cursor: pointer;
-    transition: background 0.2s ease;
-  }
-
-  .modulex-qvmodal-detail:hover {
-    background: rgba(0, 0, 0, 0.04);
-  }
-
-  .modulex-qvmodal-add {
-    flex: 1;
-    min-width: 120px;
-    padding: 10px 14px;
-    border: none;
-    border-radius: 4px;
-    background: --fabbg--;
-    color: --fabcolor--;
-    font-weight: 600;
-    cursor: pointer;
-    transition: filter 0.2s ease;
-  }
-
-  .modulex-qvmodal-add:hover {
-    filter: brightness(1.06);
-  }
-
-  [data-mx-action="favorite"].mx-fav-on .material-symbols-outlined {
-    font-variation-settings: "FILL" 1;
-    color: #e53935;
-  }
-
-  @media (max-width: 768px) {
-    .modulex-cartw-fab {
-      margin-right: 16px;
-      margin-bottom: 16px;
-      width: 52px;
-      height: 52px;
-    }
-
-    .modulex-cartw-drawer {
-      width: 100vw;
-      max-width: 100vw;
-    }
-
-    [class*="modulex"] {
-      max-width: 100vw;
-      box-sizing: border-box;
-    }
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    [class*="modulex"],
-    [class*="modulex"] * {
-      animation: none !important;
-      transition: none !important;
-    }
-  }
-
-  /* Mobil uygulama kuralı (12 Kas 2026): sepet çekmecesi mobilde SOLDAN açılır (masaüstü sağda kalır); yüzen düğme/bildirim sabit alt çubuğun
-     (--mx-altbar-h, footer alt bar) üstünde durur */
-  @media (max-width: 768px) {
-    .modulex-cartw-drawer {
-      right: auto;
-      inset-inline-start: 0;
-      transform: translateX(-105%);
-      box-shadow: 8px 0 30px rgba(0, 0, 0, 0.2);
-    }
-
-    [dir="rtl"] .modulex-cartw-drawer {
-      transform: translateX(105%);
-    }
-
-    .modulex-cartw.modulex-cartw-open .modulex-cartw-drawer,
-    [dir="rtl"] .modulex-cartw.modulex-cartw-open .modulex-cartw-drawer {
-      transform: translateX(0);
-    }
-
-    .modulex-cartw-fab {
-      margin-bottom: calc(16px + var(--mx-altbar-h, 0px) + env(safe-area-inset-bottom, 0px));
-    }
-
-    .modulex-cartw-toast {
-      bottom: calc(30px + var(--mx-altbar-h, 0px));
-    }
-  }
-</style>
-
-<script>
-  function modulexEsc(v) {
-    return String(v).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#39;");
-  }
-  /* mx sepet cekirdegi — localStorage mxCartV1.
-     Capraz-modul API adlari bilerek "mx" onekli: motor "modulex" literalini
-     bolum+sira suffix'ine cevirdigi icin paylasilan adlar modulex iceremez. */
-  (function () {
-    var MX_CART_KEY = "mxCartV1";
-    var CURRENCY = "{{currency}}";
-
-    function mxCartRead() {
-      try {
-        var raw = localStorage.getItem(MX_CART_KEY);
-        var list = raw ? JSON.parse(raw) : [];
-        return Array.isArray(list) ? list : [];
-      } catch (e) {
-        return [];
-      }
-    }
-
-    function mxCartWrite(list) {
-      try {
-        localStorage.setItem(MX_CART_KEY, JSON.stringify(list));
-      } catch (e) {}
-      mxCartRender();
-    }
-
-    function mxCartMoney(value) {
-      var n = Number(value) || 0;
-      return n.toFixed(2).replace(".", ",") + " " + CURRENCY;
-    }
-
-    window.mxCartList = function () {
-      return mxCartRead();
-    };
-
-    window.mxCartCount = function () {
-      var list = mxCartRead();
-      var total = 0;
-      for (var i = 0; i < list.length; i++) {
-        total += list[i].qty || 1;
-      }
-      return total;
-    };
-
-    window.mxCartTotal = function () {
-      var list = mxCartRead();
-      var total = 0;
-      for (var i = 0; i < list.length; i++) {
-        total += (Number(list[i].price) || 0) * (list[i].qty || 1);
-      }
-      return total;
-    };
-
-    window.mxCartAdd = function (item) {
-      if (!item || !item.id) {
-        return;
-      }
-      var list = mxCartRead();
-      var qty = Number(item.qty) || 1;
-      var found = false;
-      for (var i = 0; i < list.length; i++) {
-        if (list[i].id === item.id) {
-          list[i].qty = (list[i].qty || 1) + qty;
-          found = true;
-          break;
-        }
-      }
-      if (!found) {
-        list.push({
-          id: String(item.id),
-          name: item.name != null ? String(item.name) : "",
-          price: Number(item.price) || 0,
-          img: item.img != null ? String(item.img) : "",
-          url: item.url != null ? String(item.url) : "",
-          qty: qty
-        });
-      }
-      mxCartWrite(list);
-      mxCartToastShow();
-      mxCartBadgePulse();
-    };
-
-    window.mxCartSetQty = function (id, qty) {
-      var list = mxCartRead();
-      var next = [];
-      for (var i = 0; i < list.length; i++) {
-        if (list[i].id === id) {
-          var q = Number(qty) || 0;
-          if (q > 0) {
-            list[i].qty = q;
-            next.push(list[i]);
-          }
-        } else {
-          next.push(list[i]);
-        }
-      }
-      mxCartWrite(next);
-    };
-
-    window.mxCartRemove = function (id) {
-      var list = mxCartRead();
-      var next = [];
-      for (var i = 0; i < list.length; i++) {
-        if (list[i].id !== id) {
-          next.push(list[i]);
-        }
-      }
-      mxCartWrite(next);
-    };
-
-    window.mxCartClear = function () {
-      mxCartWrite([]);
-    };
-
-    /* data-mx-* tasiyan bir elemandan sepete ekle */
-    window.mxCartAddFromEl = function (el) {
-      if (!el || !el.getAttribute) {
-        return;
-      }
-      var id = el.getAttribute("data-mx-id");
-      if (!id) {
-        return;
-      }
-      var qty = 1;
-      var qtyEl = document.querySelector('[data-mx-qty-for="' + id + '"]');
-      if (qtyEl && qtyEl.value) {
-        qty = parseInt(qtyEl.value, 10) || 1;
-      }
-      window.mxCartAdd({
-        id: id,
-        name: el.getAttribute("data-mx-name") || "",
-        price: parseFloat(el.getAttribute("data-mx-price")) || 0,
-        img: el.getAttribute("data-mx-img") || "",
-        url: el.getAttribute("data-mx-url") || "",
-        qty: qty
-      });
-    };
-
-    /* Eski modullerle uyum koprusu: addToCart('id') cagrilari data-mx-id
-       tasiyan elemani bulup bilgileri DOM'dan okur. */
-    if (typeof window.addToCart !== "function" || window.addToCart.mxBridge !== true) {
-      var mxBridge = function (id, qty) {
-        var el = document.querySelector('[data-mx-id="' + id + '"]');
-        if (el) {
-          if (qty) {
-            window.mxCartAdd({
-              id: id,
-              name: el.getAttribute("data-mx-name") || "",
-              price: parseFloat(el.getAttribute("data-mx-price")) || 0,
-              img: el.getAttribute("data-mx-img") || "",
-              url: el.getAttribute("data-mx-url") || "",
-              qty: qty
-            });
-          } else {
-            window.mxCartAddFromEl(el);
-          }
-        }
-      };
-      mxBridge.mxBridge = true;
-      window.addToCart = mxBridge;
-    }
-
-    /* ---- Widget UI ---- */
-    var mxRoot = document.querySelector(".modulex-cartw");
-
-    window.mxCartDrawerToggle = function () {
-      if (mxRoot) {
-        mxRoot.classList.toggle("modulex-cartw-open");
-        mxCartRender();
-      }
-    };
-
-    window.mxCartDrawerClose = function () {
-      if (mxRoot) {
-        mxRoot.classList.remove("modulex-cartw-open");
-      }
-    };
-
-    var mxToastTimer = null;
-    function mxCartToastShow() {
-      /* mx-ui runtime varsa modern bildirim (Toastify); yoksa modulun kendi toast'i */
-      if (typeof window.mxToast === "function") {
-        window.mxToast("{{addedText}}", false);
-        return;
-      }
-      var toast = document.querySelector("[data-mx-cart-toast]");
-      if (!toast) {
-        return;
-      }
-      toast.classList.add("modulex-cartw-toast-show");
-      if (mxToastTimer) {
-        clearTimeout(mxToastTimer);
-      }
-      mxToastTimer = setTimeout(function () {
-        toast.classList.remove("modulex-cartw-toast-show");
-      }, 1800);
-    }
-
-    function mxCartBadgePulse() {
-      var badge = document.querySelector("[data-mx-cart-badge]");
-      if (!badge) {
-        return;
-      }
-      badge.classList.remove("modulex-cartw-pulse");
-      setTimeout(function () {
-        badge.classList.add("modulex-cartw-pulse");
-      }, 10);
-    }
-
-    function mxCartRender() {
-      var badge = document.querySelector("[data-mx-cart-badge]");
-      if (badge) {
-        badge.textContent = String(window.mxCartCount());
-      }
-      var totalEl = document.querySelector("[data-mx-cart-total]");
-      if (totalEl) {
-        totalEl.textContent = mxCartMoney(window.mxCartTotal());
-      }
-      var listEl = document.querySelector("[data-mx-cart-list]");
-      if (!listEl || !mxRoot) {
-        return;
-      }
-      var list = mxCartRead();
-      if (list.length === 0) {
-        mxRoot.classList.add("modulex-cartw-isempty");
-      } else {
-        mxRoot.classList.remove("modulex-cartw-isempty");
-      }
-      var out = "";
-      for (var i = 0; i < list.length; i++) {
-        var it = list[i];
-        var safeName = String(it.name || "").replace(/</g, "&lt;");
-        out += '<div class="modulex-cartw-item">';
-        if (it.img) {
-          out += '<img class="modulex-cartw-item-img" src="' + modulexEsc(it.img) + '" alt="' + safeName + '" loading="lazy" />';
-        } else {
-          out += '<div class="modulex-cartw-item-noimg"><span class="material-symbols-outlined" aria-hidden="true">image</span></div>';
-        }
-        out += '<div class="modulex-cartw-item-info">';
-        out += '<p class="modulex-cartw-item-name">' + safeName + "</p>";
-        out += '<div class="modulex-cartw-item-price">' + mxCartMoney((Number(it.price) || 0) * (it.qty || 1)) + "</div>";
-        out += "</div>";
-        out += '<div class="modulex-cartw-item-qty">';
-        out += "<button type=\"button\" onclick=\"mxCartSetQty('" + it.id + "', " + ((it.qty || 1) - 1) + ')">&minus;</button>';
-        out += "<span>" + (it.qty || 1) + "</span>";
-        out += "<button type=\"button\" onclick=\"mxCartSetQty('" + it.id + "', " + ((it.qty || 1) + 1) + ')">+</button>';
-        out += "</div>";
-        out += "<button type=\"button\" class=\"modulex-cartw-item-remove\" onclick=\"mxCartRemove('" + it.id + "')\" aria-label=\"{{removeText}}\">";
-        out += '<span class="material-symbols-outlined" aria-hidden="true">delete</span>';
-        out += "</button>";
-        out += "</div>";
-      }
-      listEl.innerHTML = out;
-    }
-
-    /* Diger sekmelerden gelen degisiklikler */
-    window.addEventListener("storage", function (ev) {
-      if (ev.key === MX_CART_KEY) {
-        mxCartRender();
-      }
-    });
-
-    /* Sepet degisince diger modullerin dinleyebilecegi olay */
-    window.mxCartRefresh = mxCartRender;
-
-    /* ---- Urun aksiyonlari: favori, karsilastir, hizli gorunum (Paket 625) ---- */
-    var MX_FAV_KEY = "mxFavV1";
-    var MX_COMPARE_KEY = "mxCompareV1";
-    var MX_COMPARE_MAX = 4;
-    var mxQvCurrentId = "";
-
-    function mxProductRead(key) {
-      try {
-        var raw = localStorage.getItem(key);
-        if (!raw) {
-          return [];
-        }
-        var parsed = JSON.parse(raw);
-        return Array.isArray(parsed) ? parsed : [];
-      } catch (e) {
-        return [];
-      }
-    }
-
-    function mxProductWrite(key, list) {
-      try {
-        localStorage.setItem(key, JSON.stringify(list));
-      } catch (e) {}
-    }
-
-    function mxProductNotify(msg) {
-      if (typeof window.mxToast === "function") {
-        window.mxToast(msg, false);
-        return;
-      }
-      var toast = document.querySelector("[data-mx-cart-toast]");
-      if (!toast) {
-        return;
-      }
-      toast.textContent = msg;
-      toast.classList.add("modulex-cartw-toast-show");
-      if (mxToastTimer) {
-        clearTimeout(mxToastTimer);
-      }
-      mxToastTimer = setTimeout(function () {
-        toast.classList.remove("modulex-cartw-toast-show");
-        toast.textContent = "{{addedText}}";
-      }, 1800);
-    }
-
-    function mxProductItemFromEl(el) {
-      if (!el || !el.getAttribute) {
-        return null;
-      }
-      var id = el.getAttribute("data-mx-id");
-      if (!id) {
-        return null;
-      }
-      return {
-        id: String(id),
-        name: el.getAttribute("data-mx-name") || "",
-        price: parseFloat(el.getAttribute("data-mx-price")) || 0,
-        img: el.getAttribute("data-mx-img") || "",
-        url: el.getAttribute("data-mx-url") || ""
-      };
-    }
-
-    window.mxFavIs = function (id) {
-      var list = mxProductRead(MX_FAV_KEY);
-      var i;
-      for (i = 0; i < list.length; i++) {
-        if (list[i].id === id) {
-          return true;
-        }
-      }
-      return false;
-    };
-
-    window.mxCompareIs = function (id) {
-      var list = mxProductRead(MX_COMPARE_KEY);
-      var ci;
-      for (ci = 0; ci < list.length; ci++) {
-        if (list[ci].id === id) {
-          return true;
-        }
-      }
-      return false;
-    };
-
-    window.mxFavToggle = function (item) {
-      if (!item || !item.id) {
-        return false;
-      }
-      var list = mxProductRead(MX_FAV_KEY);
-      var next = [];
-      var found = false;
-      var i;
-      for (i = 0; i < list.length; i++) {
-        if (list[i].id === item.id) {
-          found = true;
-        } else {
-          next.push(list[i]);
-        }
-      }
-      if (!found) {
-        next.push({
-          id: item.id,
-          name: item.name || "",
-          price: item.price || 0,
-          img: item.img || "",
-          url: item.url || ""
-        });
-      }
-      mxProductWrite(MX_FAV_KEY, next);
-      mxProductNotify(found ? "{{favRemovedText}}" : "{{favAddedText}}");
-      return !found;
-    };
-
-    window.mxCompareToggle = function (item) {
-      if (!item || !item.id) {
-        return false;
-      }
-      var list = mxProductRead(MX_COMPARE_KEY);
-      var next = [];
-      var found = false;
-      var i;
-      for (i = 0; i < list.length; i++) {
-        if (list[i].id === item.id) {
-          found = true;
-        } else {
-          next.push(list[i]);
-        }
-      }
-      if (!found) {
-        if (list.length >= MX_COMPARE_MAX) {
-          mxProductNotify("{{compareMaxText}}");
-          return false;
-        }
-        next.push({
-          id: item.id,
-          name: item.name || "",
-          price: item.price || 0,
-          img: item.img || "",
-          url: item.url || ""
-        });
-      }
-      mxProductWrite(MX_COMPARE_KEY, next);
-      mxProductNotify(found ? "{{compareRemovedText}}" : "{{compareAddedText}}");
-      return !found;
-    };
-
-    window.mxQuickViewClose = function () {
-      var modal = document.querySelector("[data-mx-qv-modal]");
-      if (modal) {
-        modal.classList.remove("modulex-qvmodal-open");
-        modal.setAttribute("aria-hidden", "true");
-      }
-      mxQvCurrentId = "";
-    };
-
-    window.mxQuickViewOpen = function (item) {
-      if (!item || !item.id) {
-        if (item && item.url) {
-          window.location.href = item.url;
-        }
-        return;
-      }
-      var modal = document.querySelector("[data-mx-qv-modal]");
-      if (!modal) {
-        if (item.url) {
-          window.location.href = item.url;
-        }
-        return;
-      }
-      mxQvCurrentId = item.id;
-      var imgWrap = modal.querySelector("[data-mx-qv-img]");
-      var nameEl = modal.querySelector("[data-mx-qv-name]");
-      var priceEl = modal.querySelector("[data-mx-qv-price]");
-      var urlEl = modal.querySelector("[data-mx-qv-url]");
-      var addBtn = modal.querySelector("[data-mx-qv-add]");
-      if (nameEl) {
-        nameEl.textContent = item.name || "";
-      }
-      if (priceEl) {
-        priceEl.textContent = mxCartMoney(item.price || 0);
-      }
-      if (urlEl) {
-        urlEl.href = item.url || "#";
-      }
-      if (imgWrap) {
-        if (item.img) {
-          imgWrap.innerHTML = '<img src="' + modulexEsc(item.img) + '" alt="' + modulexEsc(item.name || "") + '" loading="lazy" />';
-        } else {
-          imgWrap.innerHTML = '<span class="material-symbols-outlined" aria-hidden="true" style="font-size:48px;opacity:0.4">image</span>';
-        }
-      }
-      if (addBtn) {
-        addBtn.onclick = function () {
-          if (typeof window.addToCart === "function") {
-            window.addToCart(item.id);
-          }
-        };
-      }
-      modal.classList.add("modulex-qvmodal-open");
-      modal.setAttribute("aria-hidden", "false");
-    };
-
-    window.mxProductSyncFavButtons = function () {
-      var btns = document.querySelectorAll('[data-mx-action="favorite"]');
-      var bi;
-      for (bi = 0; bi < btns.length; bi++) {
-        var card = btns[bi].closest("[data-mx-id]");
-        if (card && window.mxFavIs(card.getAttribute("data-mx-id"))) {
-          btns[bi].classList.add("mx-fav-on");
-        } else {
-          btns[bi].classList.remove("mx-fav-on");
-        }
-      }
-    };
-
-    window.mxProductAction = function (cardEl, action) {
-      var item = mxProductItemFromEl(cardEl);
-      if (!item) {
-        return;
-      }
-      if (action === "quickview") {
-        window.mxQuickViewOpen(item);
-        return;
-      }
-      if (action === "compare") {
-        window.mxCompareToggle(item);
-        return;
-      }
-      if (action === "favorite") {
-        var on = window.mxFavToggle(item);
-        var favBtn = cardEl.querySelector('[data-mx-action="favorite"]');
-        if (favBtn) {
-          if (on) {
-            favBtn.classList.add("mx-fav-on");
-          } else {
-            favBtn.classList.remove("mx-fav-on");
-          }
-        }
-      }
-    };
-
-    document.addEventListener("click", function (ev) {
-      var qvClose = ev.target.closest("[data-mx-qv-close]");
-      if (qvClose) {
-        ev.preventDefault();
-        window.mxQuickViewClose();
-        return;
-      }
-      var btn = ev.target.closest("[data-mx-action]");
-      if (!btn) {
-        return;
-      }
-      var card = btn.closest("[data-mx-id]");
-      if (!card) {
-        return;
-      }
-      ev.preventDefault();
-      ev.stopPropagation();
-      window.mxProductAction(card, btn.getAttribute("data-mx-action"));
-    });
-
-    window.addEventListener("storage", function (ev) {
-      if (ev.key === MX_FAV_KEY) {
-        window.mxProductSyncFavButtons();
-      }
-    });
-
-    setTimeout(window.mxProductSyncFavButtons, 120);
-
-    setTimeout(mxCartRender, 50);
-  })();
-</script>

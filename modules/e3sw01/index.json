@@ -1,39 +1,65 @@
 {
-  "name": "Sepet Widget",
+  "name": {
+    "tr": "Sepet Widget 2",
+    "en": "Cart Widget 2"
+  },
   "desing": {
-    "fabbg": "#DE6D26",
+    "fabbg": "var(--mx-et-clay-warm, #C97B4A)",
     "fabcolor": "#ffffff",
-    "badgebg": "#e53935",
+    "badgebg": "var(--mx-et-green-deep, #2F5233)",
     "badgecolor": "#ffffff",
-    "drawerbg": "#ffffff",
-    "drawercolor": "#1e293b",
-    "bordercolor": "#e2e8f0",
-    "pricecolor": "#DE6D26",
-    "removecolor": "#e53935",
-    "toastbg": "#1e293b",
+    "drawerbg": "var(--mx-et-bg-light, #FCFBF7)",
+    "drawercolor": "var(--mx-et-ink, #22291F)",
+    "bordercolor": "var(--mx-et-wood-stall, #8B5E3C)",
+    "pricecolor": "var(--mx-et-green-fresh, #4A7C59)",
+    "removecolor": "#a33b2b",
+    "toastbg": "var(--mx-et-ink, #22291F)",
     "toastcolor": "#ffffff",
     "currency": "₺",
-    "cartUrl": "sepet",
-    "cartTitle": { "tr": "Sepetim", "en": "My Cart" },
-    "closeText": { "tr": "Kapat", "en": "Close" },
-    "emptyText": { "tr": "Sepetiniz boş.", "en": "Your cart is empty." },
-    "totalText": { "tr": "Toplam", "en": "Total" },
-    "goCartText": { "tr": "Sepete Git", "en": "Go to Cart" },
-    "addedText": { "tr": "Ürün sepete eklendi", "en": "Product added to cart" },
-    "removeText": { "tr": "Sepetten çıkar", "en": "Remove from cart" },
-    "favAddedText": { "tr": "Favorilere eklendi", "en": "Added to favorites" },
-    "favRemovedText": { "tr": "Favorilerden çıkarıldı", "en": "Removed from favorites" },
-    "compareAddedText": { "tr": "Karşılaştırma listesine eklendi", "en": "Added to compare list" },
-    "compareRemovedText": { "tr": "Karşılaştırma listesinden çıkarıldı", "en": "Removed from compare list" },
-    "compareMaxText": { "tr": "En fazla 4 ürün karşılaştırılabilir", "en": "You can compare up to 4 products" },
-    "quickViewTitle": { "tr": "Hızlı Görünüm", "en": "Quick View" },
-    "quickViewDetailText": { "tr": "Ürün Detayı", "en": "Product Details" },
-    "quickViewAddText": { "tr": "Sepete Ekle", "en": "Add to Cart" },
-    "compareUrl": { "tr": "karsilastirma", "en": "compare" }
+    "cartUrl": "sepetim",
+    "cartTitle": {
+      "tr": "Sepetim",
+      "en": "My Cart"
+    },
+    "closeText": {
+      "tr": "Kapat",
+      "en": "Close"
+    },
+    "emptyText": {
+      "tr": "Sepetiniz boş.",
+      "en": "Your cart is empty."
+    },
+    "totalText": {
+      "tr": "Toplam",
+      "en": "Total"
+    },
+    "goCartText": {
+      "tr": "Sepete Git",
+      "en": "Go to Cart"
+    },
+    "addedText": {
+      "tr": "Ürün sepete eklendi",
+      "en": "Product added to cart"
+    },
+    "removeText": {
+      "tr": "Sepetten çıkar",
+      "en": "Remove from cart"
+    },
+    "decreaseText": {
+      "tr": "Adeti azalt",
+      "en": "Decrease quantity"
+    },
+    "increaseText": {
+      "tr": "Adeti artır",
+      "en": "Increase quantity"
+    }
   },
   "category": "e-commerce",
-  "description": "Site geneli localStorage sepet çekirdeği. Yüzen sepet butonu, adet rozeti, çekmece (drawer) sepet listesi ve window.mxCartAdd / window.addToCart global API'sini sağlar. Vitrin, detay ve liste modüllerinin sepete ekle butonları bu modülle çalışır hale gelir. Veri anahtarı: mxCartV1.",
-  "version": "1.0.0",
+  "description": {
+    "tr": "Guvenli sepet cekirdegi (mxCartV1 schema, escape, manipule fiyat ignore). Paket 597 P20.",
+    "en": "Secure cart core (mxCartV1 schema, escape, ignore manipulated price). Package 597 P20."
+  },
+  "version": "2.0.0",
   "icon": "shopping_cart",
   "veri": {
     "statik": true,
